@@ -1,0 +1,17 @@
+{
+  "name": "jrkcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "htmlhint index.html Site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "htmlhint": "^1.4.0"
+  }
+}
