@@ -72,21 +72,6 @@
             background-color: #444; /* Darker background on hover */
         }
 
-        /* Overlay for mobile menu */
-        .menu-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            z-index: 9998; /* Just under the menu */
-            display: none; /* Hidden by default */
-        }
-        .menu-overlay.active {
-            display: block;
-        }
-
 
         /* Scroll to top button styles */
         #scrollToTopBtn {
@@ -595,7 +580,6 @@
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
             body.classList.toggle('menu-open'); // Toggle 'menu-open' class on body
-            menuOverlay.classList.toggle('active'); // Show or hide overlay
         });
 
         // Close mobile menu when a link is clicked or overlay is clicked
@@ -603,7 +587,6 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 body.classList.remove('menu-open');
-                menuOverlay.classList.remove('active');
             });
         });
 
@@ -611,7 +594,6 @@
         menuOverlay.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
             body.classList.remove('menu-open');
-            menuOverlay.classList.remove('active');
         });
 
 
